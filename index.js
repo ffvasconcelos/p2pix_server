@@ -31,7 +31,7 @@ io.on("connection", (socket) => {
     }
 });
 
-app.get('/', (req, res) => {
+app.get('/clientsArray', (req, res) => {
     try {
         res.send(array).status(200)
     } catch (error) {
