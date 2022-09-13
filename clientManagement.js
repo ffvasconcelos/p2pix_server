@@ -16,7 +16,9 @@ const addConnection = (hash, socket) => {
 const removeConnection = (id) => {
     const user = array.find(el => el.id === id)
 
-    console.log(`Address ${user.ip} disconnected from network`)
+    const address = user ? user.ip : 'unknown'
+
+    console.log(`Address ${address} disconnected from network`)
 
     const aux = array.filter(el => el.id !== id)
 

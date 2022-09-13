@@ -10,6 +10,7 @@ const io = new Server(httpServer, {
     path: '/p2pix_connect',
     connectTimeout: 30000,
     pingTimeout: 270000,
+    serveClient: false
 });
 
 io.on("connection", (socket) => {
